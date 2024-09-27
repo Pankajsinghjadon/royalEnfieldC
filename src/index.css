@@ -1,0 +1,3207 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  
+ 
+
+}
+html,body{
+  height: 100%;
+  width: 105%;
+  overflow-x: hidden;
+  margin-left: -2.5vw;
+  
+}
+
+.hero_page{
+ 
+width: 100vw;
+
+ height: auto;
+ margin: 12px -122px;
+ background-color: black;
+ 
+}
+.myvideo{
+  width: 100.8vw;
+  
+  height: 82vh;
+  
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+#firstV{
+  width: 100%;
+ height: 85vh;
+ margin-top: -12vh;
+}
+#secondV{
+  display: none;
+}
+.explore_btn{
+  
+  flex-direction: column;
+ position: relative;
+  top: 35vh;
+  left: -40vw;
+  
+}
+
+.explore_btn h1{
+  color: white;
+  
+ display: block;
+ padding-bottom: 4vh;
+ font-size: 1.6vw;
+
+}
+.explore_btn button{
+  width: 8vw;
+  height: 5vh;
+}
+
+
+/* ############ Navbar first #############  */
+.mynav{
+  display: grid;
+  background-color: black;
+  width: 100.6VW;
+  margin: -32px -130.2px;
+  height: 9vh;
+  z-index: 9999999;
+  position: fixed;
+  grid-template-columns: 5rem 1fr 2fr 7rem;
+}
+#logo{
+  display: grid;
+  width: 60%;
+  height: 5vh;
+  justify-content: start;
+  align-items: center;
+  grid-column: 2/3;
+  margin-top: 2vh;
+  margin-left: -2vw;
+ 
+}
+#logo img{
+  width: 100%;
+}
+.meee{
+  background-color: black;
+  color: white;
+  margin-top: 25vh;
+}
+nav{
+  display: grid;
+  grid-column: 3/4;
+ cursor: pointer;
+  width: 40%;
+  height:8vh ;
+  
+}
+.profile{
+  display: none;
+}
+nav ul{
+  display: flex;
+  text-decoration: none;
+ 
+  align-items: center;
+}
+nav ul li {
+  width: 6vw;
+  list-style: none;
+  font-size: 1.1vw;
+  padding-right: 0.5vw;
+  padding-top: 2vh;
+  position: relative;
+  
+  
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: red;
+
+}
+
+.clientside{
+  display: grid;
+  width: 100%;
+  height:8vh ;
+  margin-left: -10vw;
+ 
+  grid-column: 4/5;
+  
+}
+.clientside ul{
+  display: flex;
+  list-style: none;
+ width: 100%;
+ padding-left: 20px;
+  align-items: center;
+}
+.clientside ul li a{
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  
+}
+#search{
+  border-radius: 10px;
+  width: 120px;
+  padding-left: 1px;
+}
+
+.dropdown{
+  display: none;
+}
+#shop{
+
+ display: flex;
+ 
+ width: 1vw;
+ float: right;
+ margin-top: 0.5vh;
+}
+nav ul li a:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 10;
+  top: 100%;
+  z-index: 99999;
+  background-color: black;
+  margin-left: -45px;
+  width: 10vw;
+  color: white;
+ 
+
+}
+
+.dropdown ul {
+  display: block;
+  margin-top: 10px;
+  padding-top: 5px;
+  
+}
+.dropdown ul li {
+ padding-top: 5px;
+ padding-left: 2vw;
+}
+.sideIcon{
+  display: none;
+  visibility: hidden;
+}
+.sideicon{
+  display: none;
+  visibility: hidden;
+}
+.closeB{
+  display: none;
+  visibility: hidden;
+}
+
+/* $$$$$$$$$$$$$$ Second Page $$$$$$$$$$$$$$$$  */
+.secondPage{
+  width: 100.8vw;
+  margin-top: -2vh;
+ position: relative;
+  height: 98vh;
+  background-color: rgb(22, 22, 20);
+  
+}
+.slides{
+  
+  width: 100%;
+ height: 90vh;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ 
+
+
+ 
+
+}
+.hidden{
+  display: none;
+}
+img .displaySlide{
+  display: block;
+}
+/* .myimg img{
+  position: absolute;
+  margin-left: -50vw;
+  width: 99.2vw;
+  height: 100vh;
+  
+} */
+ .mslides{
+  visibility: hidden;
+ }
+.slide{
+  width: 100%;
+  margin-left: -50vw;
+  height: 90vh;
+  transition: 1ms;
+  position: absolute;
+ 
+}
+
+#leftbtn{
+  background-color: transparent;
+  background-color: black;
+  z-index: 9999;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 2vw;
+  top: 50vh;
+}
+#rightbtn{
+  background-color: transparent;
+  background-color: black;
+  z-index: 9999;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2vw;
+  
+  top: 50vh;
+
+}
+#know{
+  width: 10vw;
+  height: 5vh;
+  display: flex;
+  font-size: larger;
+  padding-left: 18px;
+  padding-top: 5px;
+  box-shadow: 5px 5px 5px black;
+  position: absolute;
+  top: 35vh;
+  left: 80vw;
+  cursor: pointer;
+}
+#know:hover{
+  background-color: blue;
+  color: black;
+}
+.newsbar{
+  width: 100%;
+  background-color: rgb(33,33,33);
+  height: 7.2vh;
+}
+.newsbar h1{
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  font-size: x-large;
+}
+
+/* %%%%%%%%%%%%%%%%%% Third Page %%%%%%%%%%%%%  */
+.third_page{
+ margin-top: -0.5vh;
+  width: 100.8vw;
+  height: 143vh;
+  position: relative;
+  
+  
+}
+.photho_dump{
+ overflow: hidden;
+  width: 25%;
+  height: 35vh;
+ 
+ position: relative;
+ display: flex;
+ float: left;
+ 
+ 
+ 
+}
+.mphoto{
+  visibility: hidden;
+}
+.child{
+ overflow: hidden;
+  width: 100%;
+ background-size:cover;
+ transition: all 2s;
+}
+.child h3{
+  color: white;
+  margin-top: 30vh;
+  margin-left: -3vw;
+  font-size: large;
+}
+.pimg2 h3{
+  color: rgb(41, 23, 79);
+  
+}
+.pimg1{
+ background-image: url("./images/RE.avif");
+
+}
+.pimg2{
+ 
+ background-image: url("./images/RE1.avif");
+  
+}
+.pimg3{
+
+ background-image: url("./images/RE2.avif"); 
+}
+.pimg4{ 
+ background-image: url("./images/RE3.avif");
+ 
+}
+
+.photho_dump:hover .child{
+  overflow: hidden;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.mynav2{
+  width: 100.8vw;
+height: 8vh;
+background-color: rgb(33,33,33);
+
+color: white;
+display: flex;
+
+
+
+}
+.mList{
+  display: none;
+  visibility: hidden;
+}
+
+
+.logo1{
+  width: 15%;
+  height: 5vh;
+  margin-left: 2vw;
+  margin-top: 13px;
+ 
+}
+#Mmenu{
+  display: none;
+  visibility: hidden;
+}
+.bikeDetailes{
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4.5vw;
+  margin-top: 5px;
+ 
+}
+.bikeDetailes ul li{
+  text-decoration: none;
+  font-size: 1vw;
+  display: flex;
+  padding: 2vw;
+  list-style: none;
+  
+
+}
+.bikeDetailes ul li a{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.bikeDetailes h3{
+  color: white;
+  margin-top: 3.5vh;
+  font-size: 5vh;
+}
+.bikeDetailes ul li a:hover{
+ color: red;
+ 
+}
+.claasicimg{
+ background-size: cover;
+  background-image: url("./images/classic.jpg");
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+ 
+
+}
+.claasicimg button{
+  width: 8vw;
+  height: 5vh;
+  font-size: 1vw;
+ position: absolute;
+ top: 95vh;
+ left: 71vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(1, 1, 1);
+} 
+.claasicimg button:hover{
+  background-color: blue;
+  color: white;
+}
+
+/* %%%%%%%%%%Fourth page %%%%%%%%%%  */
+
+.fourth_page{
+  border: 1px solid rgb(255, 255, 0);
+  width: 100.8vw;
+  height: 128vh;
+  position: relative;
+  z-index: 999999;
+
+}
+.mynav3{
+  width: 100.8vw;
+  height: 8vh;
+  background-color: rgb(33,33,33);
+  
+  color: white;
+  display: flex;
+  
+  
+  
+
+  
+  }
+#menu3 {
+  display: none;
+  visibility: hidden;
+}
+.bikedetailes{
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4.5vw;
+  margin-top: 50px;
+  padding-right: 2vw;
+ 
+}
+.bikedetailes ul li{
+  text-decoration: none;
+  font-size: 1vw;
+  display: flex;
+  padding-left: 3vw;
+  list-style: none;
+  margin-top: -4.5vh;
+  margin-left: 0.5vw;
+  
+}
+.bikedetailes ul li a{
+  cursor: pointer;
+  color: white;
+  width: 20vw;
+  padding-left: 2vw;
+  margin-left: -5vw;
+  text-decoration: none;
+}
+.bikedetailes h3{
+  color: white;
+  margin-top: -4.5vh;
+ 
+  font-size: 5vh;
+}
+.bikedetailes ul li a:hover{
+ color: red;
+ 
+}
+
+
+
+.myimg4{
+  background-image: url("./images/ladhak.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 122vh;
+  
+}
+.myimg4 img{
+  width: 100%;
+  height: 100vh;
+}
+.fourth_page button{
+  width: 13vw;
+  height: 6vh;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  top: 98vh;
+  left: 42vw;
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+  font-size: large;
+  font-weight: bold;
+  padding-right: .8vw;
+}
+.poster:hover{
+  background-color: white;
+  color: red;
+  transition: all 0.5s;
+}
+/* %%%%%%%%% footer %%%%%%%%%%%%%%  */
+.service{
+  width: 84.5%;
+  height: 20vh;
+  background-color: rgb(33,33,33);
+  display: flex;
+  padding-left: 30vw;
+  padding-top: 2vh;
+  margin-left: -8vw;
+ 
+}
+.container{
+  
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-left: 2vw;
+ 
+  
+ 
+
+}
+.tap:hover{
+  color: red;
+}
+.map:hover{
+  color: red;
+}
+.gear:hover{
+  color: red;
+}
+.Ridebike{
+  display: none;
+}
+.tap{
+  background-image: url("./images/tap-click-svgrepo-com.svg");
+  background-size: 6vw;
+  background-repeat: no-repeat;
+  margin-left: 2vw;
+  color: white;
+  opacity: 0.8;
+  
+}
+.map{
+  background-image: url("./images/map-pointer-svgrepo-com.svg");
+  background-size: 6vw;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  color: white;
+}
+.gear{
+  background-image: url("./images/tools-svgrepo-com.svg");
+  background-size: 6vw;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  color: white;
+}
+.container h3{
+  display: flex;
+  margin-top: 10vh;
+  margin-left: -12vw;
+}
+.myFooter{
+  z-index: 99999999;
+  width: 120%;
+  height: 95vh;
+  margin-left: -7.7vw;
+  background-color: rgb(229,227,227);
+  
+}
+.socialhandels{
+  width: 100%;
+  height: 8vh;
+  
+}
+.Fcontent img{
+  width: 35px;
+  height: 35px;
+  
+}
+.Fcontent ul {
+  display: flex;
+  float: left;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 82vw;
+  text-decoration: none;
+}
+.Fcontent li{
+  list-style: none;
+  padding-right: 15px;
+  margin-top: -30px;
+ 
+}
+.Fcontent img:hover{
+  
+  border-radius: 10px;
+  
+
+}
+.Fcontent h3{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 25px;
+  width: 40vw;
+  margin-left: 55vw;
+}
+.fborder{
+  width: 97%;
+  margin-top: 3vh;
+  margin-left: 1.3vw;
+  border: 1px solid black;
+}
+.flists{
+
+  width: 100%;
+  height: 70vh;
+  margin-top: 3vh;
+  
+}
+.list{
+  display: flex;
+
+  width: 15vw;
+  height: 70vh;
+  justify-content: space-around;
+  float: left;
+  margin-left: 15px;
+  position: relative;
+
+}
+.list ul{
+  display: flex;
+  flex-direction: column;
+ position: absolute;
+ top: 10vh;
+
+ 
+}
+.Mbutton{
+  display: none;
+}
+.Mlist {
+  display: none;
+}
+.list h2{
+  padding-top: 20px;
+  font-weight:bolder;
+  cursor: pointer;
+}
+.list li{
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.list li:hover{
+color: red;
+}
+
+.Efooter{
+  width: 120%;
+  border: 1px solid rgb(33, 33, 33);
+  height: 5.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10vh;
+  margin-left: -7.7vw;
+  
+}
+#first{
+  margin-left: 4vw;
+  
+}
+h5{
+  opacity: 0.7;
+}
+#second{
+ margin-right: 4vw;
+}
+
+
+/* ###################### MotorCycle #######################  */
+.motorcycle{
+ margin-top: 4vh;
+ border: 2px solid rgb(11, 11, 11);
+ height: 143vh;
+  width: 100vw;
+  margin-left: -8vw;
+  background-color: rgb(229,227,227);
+  
+ 
+}
+
+.myMcontent{
+  display: grid;
+  grid-template-columns: 70vw 60%;
+}
+.Mheading{
+  background-color: rgb(33,33, 33);
+  width: 100vw;
+  height: 8vh;
+  color: white;
+
+  text-align: center;
+}
+.Mheading h3{
+ text-align: center;
+ padding-top: 3vh;
+
+
+}
+.contentM1{
+  background-color: rgb(255,255,255,0.5);
+  cursor:pointer;
+  display: grid;
+  width: 35%;
+  height: 50vh;
+  
+}
+.cmenu{
+  border: 1px solid rgb(33,33,33,0.2);
+  
+}
+.cmenu:hover{
+  background-color: rgb(229,227,227);
+ 
+}
+.cmenu h4{
+  text-align: start;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  font-weight: lighter;
+}
+.imagesM1{
+  
+  width: 125.5%;
+  height: 135vh;
+ display: grid;
+grid-row-gap: 8vh;
+ grid-template-columns: 1fr 1fr 1fr;
+overflow: hidden;
+  margin-left: -45.5vw;
+}
+.imgContent{
+ 
+ display: grid;
+width: 100%;
+
+grid-template-rows: 18vw;
+ position: relative;
+
+ 
+}
+
+.Dcontent{
+  border: 1px solid black;
+  background-color: rgb(33,33,33);
+  width: 100%;
+  height: 8vh;
+ position: absolute;
+ top: 39.6vh;
+ color: white;
+ 
+
+}
+.Dexplore{
+  background-color: red;
+  color: white;
+  width: 7vw;
+  height: 5vh;
+  position: absolute;
+  top: 8vh;
+  left: 3vw;
+  opacity: 0;
+}
+.DRide{
+  background-color: transparent;
+  
+  color: white;
+  width: 10vw;
+  height: 5vh;
+  position: absolute;
+  top: 8vh;
+  left: 13vw;
+  opacity: 0;
+}
+.Dcontent h3{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-top: 2vh;
+}
+.imgC1{
+  background-image: url("./images/classic-350-motorcycle-listing.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imgC2{
+  background-image: url("./images/guerrilla_450_motorcycle.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC3{
+  background-image: url("./images/shotgun-650-motorcycle-listing.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC4{
+  background-image: url("./images/hunter-350-motorcycle-landing.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC5{
+  background-image: url("./images/bullet-350-motorcycle-listing.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC6{
+  background-image: url("./images/meteor-350-hero-color.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC7{
+  background-image: url("./images/new-himalayan-motorcycle-listing.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC8{
+  background-image: url("./images/continental-gt-650-thumbnail.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgC9{
+  background-image: url("./images/scram-411-listing.avif");
+  background-size:cover;
+  
+  background-repeat: no-repeat;
+}
+.imgContent:hover .Dcontent{
+  height: 19.7vh;
+  top: 27.6vh;
+}
+.imgContent:hover .Dexplore{
+  opacity: 1;
+}
+.imgContent:hover .DRide{
+  opacity: 1;
+}
+.imgC9 .Dcontent{
+  margin-top: -8vh;
+}
+.imgC7 .Dcontent{
+  margin-top: -8vh;
+}
+.imgC8 .Dcontent{
+  margin-top: -8vh;
+}
+.imgC7:hover .Dcontent{
+  padding-bottom: 10vh;
+}
+
+/* $$$$$$$$$$$ Shop $$$$$$$$$$$$$$  */
+.shop{
+  border: 1px solid red;
+  width: 119.9%;
+  height: 333vh;
+  margin-left: -7.9vw;
+  
+  
+
+}
+.shopNav{
+  width: 100%;
+  height: 8vh;
+  margin-top: 4vh;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  text-align: center;
+
+}
+.shopNav2{
+  width: 100%;
+  height: 8vh;
+  margin-top: -7vh;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  text-align: center;
+
+}
+.shopNav h3{
+  padding-top: 2.2vh;
+}
+.shopNav2 h3{
+  padding-top: 1.5vh;
+  padding-left: 2vw;
+  font-size: xx-large;
+}
+
+.shopPhoto{
+  width: 100%;
+
+  height: 83vh;
+}
+.shopPhoto img{
+  height: 85vh;
+}
+.mycollection{
+  border: 1px solid purple;
+  width: 100%;
+  height: 200vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  
+ 
+}
+.mcbox{
+  border: 1px solid black;
+ background-repeat: no-repeat;
+ background-size: cover;
+ transition: all 1.5s;
+
+}
+
+.mcbox1{
+  background-image: url("./images/gloves.avif");
+}
+.mcbox2{
+  background-image: url("./images/helmet.avif");
+}
+.mcbox3{
+  background-image: url("./images/boots.avif");
+}
+.mcbox4{
+  background-image: url("./images/protective-jackets.avif");
+  
+}
+.mcbox5{
+  background-image: url("./images/mlag.avif");
+}
+.mcbox6{
+  background-image: url("./images/t-shirts.avif");
+}
+.mcbox7{
+  background-image: url("./images/shirts.avif");
+}
+.mcbox8{
+  background-image: url("./images/royal-enfield-apparel-mask.avif");
+}
+.mcbox9{
+  background-image: url("./images/bags.avif");
+}
+
+
+.mcbtn{
+  width: 9vw;
+  height: 5vh;
+  border: 2px solid rgb(186, 223, 23);
+  color: rgb(199, 224, 11);
+  background-color: transparent;
+  font-size: medium;
+  font-weight: bolder;
+}
+.mcbox h2{
+  color: rgb(208, 225, 226);
+ padding-top: 40vh;
+}
+.mcbtn9{
+  color: red;
+  background-color: rgb(255, 255, 0);
+}
+.mcbtn6{
+  color: red;
+  background-color: rgb(208, 221, 27);
+}
+.myScollections{
+ 
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  
+}
+.sparent{
+  overflow: hidden;
+
+
+}
+.schild{
+ background: rgba(0,0,0 ,0.6);
+  height: 30vh;
+  transition: all 1.5s;
+  display: flex;
+
+}
+.schild h3{
+  color: rgb(239, 229, 229);
+  align-items: flex-start;
+  height: 4vh;
+  margin-top: 23vh;
+  background-color: rgb(0,0,0,0.6);
+  width: 100%;
+  padding-top: 1vh;
+  justify-content: center;
+  display: flex;
+  
+  
+
+ 
+}
+
+.schild1{
+ 
+  display: flex;
+  width: 25vw;
+  background-image: url(./images/belts.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.schild2{
+ 
+  display: flex;
+ 
+  width: 25vw;
+  background-image: url(./images/headgear.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.schild3{
+  display: flex;
+ 
+  width: 25vw;
+  background-image: url(./images/pins.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.schild4{
+
+  display: flex;
+  
+  width: 25vw;
+  background-image: url(./images/wallets.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sparent:hover .schild{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.sparent:hover h3{
+  color: rgb(209, 223, 22);
+}
+
+/* ###################### Service Page $$$$$$$$$$%%%%%%%%%  */
+.SerFpage{
+ 
+  width: 120%;
+  height: 110vh;
+  margin-top: 4.5vh;
+  margin-left: -8vw;
+  background-color: antiquewhite;
+}
+.serfParent{
+  
+  position: relative;
+  
+}
+.serFChild{
+ 
+  width: 51%;
+  height: 55.2vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+.serFChild1{
+  display: flex;
+  background-image: url('./images/cost-calculator-new.jpg');
+}
+.serFChild2{
+  display: flex;
+  background-image: url('./images/Group.jpg');
+  background-size: 100% 100%;
+  
+}
+.serFChild3{
+  background-image: url('./images/shotgun-650-motorcycle-listing.avif');
+  margin-top: -110.5vh;
+  margin-left: 50%;
+  background-size: 100% 100%;
+  background-color: rgb(13, 1, 25);
+ 
+  
+ 
+}
+.serFChild4{
+
+  background-image: url('./images/ride-sure.jpg');
+  margin-left: 50%;
+  background-size: 100% 100%;
+}
+.mimage{
+  width: 100%;
+  height: 100%;
+}
+.serWrite{
+  
+  color: white;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+ margin-top: 46vh;
+ background-color: rgba(0,0,0 ,0.8);
+ 
+}
+.sWritten{
+  display: flex;
+}
+.sWritten p{
+  margin-top: 5vh;
+  margin-left: -9vw;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.sWritten h3{
+  margin-left: 2vw;
+  font-weight: lighter;
+  
+  margin-top: 2vh;
+}
+.serFChild2 p{
+  margin-left: -7.5vw;
+
+}
+.serFChild3 p{
+  margin-left: -7.5vw;
+
+}
+.serbtn{
+  display: flex;
+  width: 7vw;
+  height: 6vh;
+  margin-top: -5.6vh;
+  margin-left: 40vw;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.serFChild3 .serbtn{
+  display: flex;
+  margin-left: 30vw;
+}
+.serFChild4 .serbtn{
+  width: 11vw;
+  margin-left: 38vw;
+}
+
+.serbtn2{
+  display: flex;
+  width: 11vw;
+  height: 6vh;
+  margin-top: -5.9vh;
+  margin-left: 38vw;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.serbtn:hover{
+  color: red;
+  background-color: white;
+  transition: all 1s;
+}
+.serbtn2:hover{
+  color: red;
+  background-color: white;
+  transition: all 1s;
+}
+.srnavbar{
+ 
+  width: 120.5%;
+  height: 9vh;
+  background-color: rgb(33,33,33);
+  margin-left: -8vw;
+  
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.srnavbar h3{
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.5vh;
+  padding-left: 5vw;
+}
+.srtpage{
+  display: flex;
+  background-color: rgb(4, 4, 6);
+  width: 120.5%;
+  height: 120vh;
+  margin-left: -8vw;
+  background-image: url('./images/image.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+ 
+}
+.clrchng{
+  
+  background-color: rgb(0,0,0,0.6);
+  width: 120.5%;
+  height: 100vh;
+  margin-left: -8vw;
+
+}
+.srleft{
+  display: flex;
+  margin: 10vh 5vw;
+  width: 35%;
+  height: 80vh;
+  
+  margin-left: 14vw;
+}
+.srleft h1{
+  display: flex;
+ color: white;
+ margin-top: 25vh;
+ font-size: 3vw;
+}
+.srleft h4{
+  color: white;
+  display: flex;
+  margin-top: 32vh;
+  margin-left: -21.5vw;
+ align-items: flex-start;
+  font-size: x-large;
+  height: 10vh;
+  width: 90%;
+  justify-content: flex-start;
+  opacity: 0.7
+  
+ 
+}
+.srleft h2{
+  color: white;
+
+  display: flex;
+  height: 5vh;
+ opacity: 0.7;
+  margin-top: 60vh;
+  margin-left: -33vw;
+}
+.srleft h3{
+  
+ 
+  display: flex;
+  height: 8vh;
+  
+  width: 15vw;
+  margin-top: 63vh;
+  margin-left: -13vw;
+  align-items: center;
+  font-size: xx-large;
+  color: red;
+}
+.srRight{
+  display: flex;
+ 
+  width: 50vw;
+  height: 100vh;
+  margin-left:57vw ;
+  margin-top: -90vh;
+}
+label{
+  display: flex;
+  color: white;
+  font-size: larger;
+  margin-top: 2vh;
+}
+.nameE{
+  color: rgb(0, 0, 0);
+  margin-top: 2vh;
+  width: 49.5vw;
+  height: 7vh;
+  display: flex;
+}
+.Email{
+  display: flex;
+  color: rgb(15, 14, 14);
+  margin-top: 2vh;
+  width: 49.5vw;
+  height: 7vh;
+}
+.State{
+  display: flex;
+  color: rgb(10, 10, 10);
+  margin-top: 2vh;
+  height: 7vh;
+  width: 23.5vw;
+}
+.City{
+  display: flex;
+  color: rgb(17, 14, 14);
+  
+  height: 7vh;
+  width: 23.5vw;
+  margin: -7.3vh 26vw;
+
+}
+.Date{
+  display: flex;
+  color: rgb(17, 14, 14);
+  margin-top: 9vh;
+  height: 7vh;
+  width: 23.5vw;
+
+}
+.mobilen{
+  display: flex;
+  color: rgb(17, 14, 14);
+  margin-top: 9vh;
+  height: 7vh;
+  width: 49.5vw;
+}
+.servForm h4{
+ color: white;
+ font-size: small;
+ width: 50vw;
+ 
+ justify-content: flex-start;
+ align-items: flex-start;
+ text-align: left;
+ margin-top: 3vh;
+ opacity: 0.8;
+ 
+}
+.cheackbox{
+  color: rgb(17, 13, 13);
+}
+.servForm strong{
+  font-size: medium;
+  color: white;
+  opacity: 1;
+}
+.mcheck{
+  color: white;
+  display: flex;
+  margin-left: 3vw;
+  margin-top: -2.5vh;
+}
+.cheackbox{
+  display: flex;
+  color: white;
+  width: 5vw;
+  margin-top: 5vh;
+  margin-left: -1vw;
+}
+.servbtn{
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 1vw;
+  width: 8vw;
+  height: 5vh;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.servbtn:hover{
+  color: red;
+  background-color: white;
+  transition: all 1s;
+}
+
+/* %%%%%%%%%%%%%%%%%% our World  %%%%%%%%%%%%%%%%%%%%%%  */
+.worldnav{
+  display: flex;
+ width: 100.5%;
+ height: 8vh;
+ background-color: rgb(33, 33, 33);
+ margin-top: 4vh;
+ color: white;
+ justify-content: center;
+align-items: center;
+font-size: x-large;
+}
+.worldPage{
+  width: 120%;
+  height: 93vh;
+ 
+  margin-left: -8vw;
+
+}
+.worldbanner img{
+  height: 85vh;
+}
+.worldSPage{
+  
+  width: 120.2%;
+  margin-left: -8vw;
+  height: 170vh;
+}
+.wcParent{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 33.3%;
+  height: 50vh;
+  float: left;
+ 
+}
+.wchild{
+  display: flex;
+ width: 100%;
+ height: 50vh;
+
+ flex-direction: row;
+ float: left;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+.wcParent:hover .wchild{
+  transform: scale(1.1);
+  transition: all  3s;
+  overflow: hidden;
+}
+.wchild1{
+  background-image: url('./images/our-worldworld.jpg');
+}
+.wchild2{
+  background-image: url('./images/reown.jpg');
+}
+.wchild3{
+ background-image: url('./images/made-in-madras.avif');
+}
+.wchild4{
+ background-image: url('./images/royal-enfield-custom-world.jpg');
+}
+.wchild5{
+ background-image: url('./images/sept-700X556.jpg');
+}
+.wchild6{
+  background-image: url('./images/nav-media.avif');
+}
+.wchild7{
+  background-image: url('./images/1901-4.jpg');
+}
+.wchild8{
+  background-image: url('./images/GGC-tile.jpg');
+}
+.wchild9{
+  background-image: url('./images/campaigns.jpg');
+}
+.wchild10{
+  background-image: url('./images/nav-careers.jpg');
+}
+.wchild11{
+  background-image: url('./images/royal-enfield-gallery.avif');
+}
+.wchild12{
+ background-color: white;
+}
+.wName{
+  display: flex;
+  width: 100%;
+  background-color:rgb(33, 33, 33);
+  color: white;
+  height: 8vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 42vh;
+}
+
+.wName h3{
+  position: relative;
+  display: flex;
+  
+  justify-content: center;
+ 
+ 
+}
+.wchild:hover .wName{
+  height: 15vh;
+  margin-top: 35vh;
+  display: flex;
+  
+}
+.wchild:hover .wexplore{
+  display: flex;
+  opacity: 1;
+}
+.wchild:hover .wName h3{
+  margin-top: -8vh;
+}
+.wexplore{
+  display:flex;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  height: 5vh;
+  position: absolute ;
+  top: 42vh;
+  background-color: transparent;
+  color: white;
+ opacity: 0;
+}
+.wexplore:hover{
+  color: red;
+  background-color: white;
+  transition: all 1s;
+}
+/* %%%%%%%%%%%%%%%%% Support Page &&&&&&&&&&&&&&&  */
+
+.supportPage{
+  width: 120.5%;
+ 
+  display: flex;
+  margin-left: -8vw;
+  height: 40vh;
+  margin-top: 4.6vh;
+}
+.supportgrid{
+  display: grid;
+ 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 40vh;
+}
+.supportbox{
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.supportbox1{
+  background-image: url('./images/support-call.jpg');
+}
+.supportbox2{
+  background-image: url('./images/support-write-to-us.avif');
+}
+.supportbox3{
+  background-image: url('./images/support-faq.jpg');
+}
+.supportbox4{
+  background-image: url('./images/roadside-assistance-landing.jpg');
+}
+
+.supcontent{
+  width: 100%;
+  height: 14vh;
+  background-color: rgb(33, 33, 33);
+  position: absolute;
+  top: 26vh;
+  color: white;
+  overflow: hidden;
+}
+
+.supcontent h4{
+  color: white;
+  display: flex;
+  font-size: small;
+  margin-top: 2vh;
+  opacity: 0.9;
+  
+}
+.supportbox3 .supcontent h4{
+  display: flex;
+  margin-left: 3vw;
+  
+}
+.supportbox4 .supcontent h4{
+  display: flex;
+  margin-left: 1vw;
+  
+}
+.supcontent h3{
+  display: flex;
+  margin-top: 2vh;
+  justify-content: center;
+}
+
+.suprtbtn{
+  overflow: hidden;
+  width: 10vw;
+  height: 5vh;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+  opacity: 0;
+}
+.suprtbtn:hover{
+ color: red;
+ background-color: white;
+ transition: all 0.5s;
+}
+.supportbox:hover .supcontent{
+  height: 18vh;
+  top: 22vh;
+  transition: all 0.5s ;
+}
+.supportbox:hover .suprtbtn{
+  opacity: 1;
+}
+.secondgrid{
+  display: flex;
+  height: 55vh;
+  
+  width: 120.5%;
+  margin-left: -8vw;
+  
+}
+.mySgrid{
+  display: grid;
+  width: 100%;
+ 
+
+ 
+}
+.Scontentsecond{
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.Scontentsecond1{
+  background-image: url("./images/owners-manualSu.jpg");
+  
+}
+.Scontentsecond2{
+ background-image: url("./images/digital-quick-book.webp");
+}
+.Scontentsecond3{
+  background-image: url("./images/ride-sure.jpg");
+}
+
+.Scontentsecond h2{
+  color: white;
+  display: flex;
+  position: relative;
+  top: 29vh;
+  left: 3vw;
+  opacity: 1;
+  
+
+}
+.Scontentsecond h5{
+  color: white;
+  display: flex;
+  font-size: medium;
+  font-weight: bolder;
+  position: relative;
+  top: 32vh;
+  opacity: 1;
+  background-color: rgba(0,0,0 ,0.7);
+  width: 18vw;
+  left: 3vw;
+  text-align: left;
+
+}
+.sgridbtn{
+  width: 15vw;
+  height: 5vh;
+  display: flex;
+  position: relative;
+  top: 36vh;
+  left: 3vw;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.Scontentsecond2 h2{
+  top: 35vh;
+}
+.Scontentsecond2 .sgridbtn{
+  top: 40vh;
+  width: 8vw;
+}
+.tan{
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(0,0,0,0.6);
+}
+.Scontentsecond3 h5{
+  top: 29vh;
+}
+.Scontentsecond3 h2{
+  color: rgb(251, 244, 22);
+  background-color: rgb(0,0,0,0.6);
+}
+.Scontentsecond3 .sgridbtn{
+  top: 30vh;
+  width: 8vw;
+}
+.supNav{
+  display: flex;
+  width: 120.5%;
+  margin-left: -8vw;
+  height: 8vh;
+  background-color: rgb(33,33, 33);
+ 
+
+}
+.supNav{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.querries{
+  width: 120.5%;
+ overflow: hidden;
+  display: flex;
+  margin-left: -8vw;
+  height: 70vh;
+  grid-template-columns: 1fr 3fr;
+}
+.leftPart{
+  cursor: pointer;
+  display: flex;
+  
+  background-color: rgb(213,213,213);
+  width: 25%;
+}
+.leftPart h2{
+ 
+ display: flex;
+ width: fit-content;
+ position: relative;
+ top: 10vh;
+ left: 3.2vw;
+ 
+
+}
+.leftPart p{
+ 
+ display: flex;
+ width: fit-content;
+ position: relative;
+ top: 15vh;
+ left: -3.8vw;
+}
+.rightPart{
+  overflow: hidden;
+  width: 75%;
+ 
+  
+}
+.catName{
+
+  display: flex;
+  width: 60%;
+  height: 40vh;
+  margin-top: 20vh;
+  margin-left: -22vh;
+}
+.myCatg h3{
+  display: flex;
+  margin-top: 2vh;
+  
+  height: fit-content;
+  font-size: medium;
+}
+.border{
+  display: flex;
+  border: 1px solid black;
+  width: 15vw;
+  margin-top: 2vh;
+  opacity: 0.4;
+}
+.myCat1{
+  color: red;
+
+}
+.myCat2{
+  
+ left: -15.18vw;
+  position: relative;
+  top: 7vh;
+  
+}
+.myCat3{
+  left: -30.2vw;
+  position: relative;
+  top: 14vh;
+  
+}
+.myCat4{
+  left: -45.39vw;
+  position: relative;
+  top: 21vh;
+  
+}
+.rightPart h1{
+  display: flex;
+  color: rgb(12, 12, 12);
+  position: relative;
+  left: 8vw;
+  top: 9vh;
+  font-size: x-large larger;
+}
+.accordion{
+  position: relative;
+  top: 10vh;
+  text-align: left;
+  width: 70%;
+  left: 7vw;
+  color: black;
+  background-color: white;
+  padding: 10px 18px;
+  padding-bottom: 2vh;
+  border-radius: 4px;
+  border-bottom: 2px solid black;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  font-size: medium;
+  
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.question .icon{
+  margin-right: 1vw;
+  font-size: xx-large;
+}
+.Answere{
+  transition: all 0.5s;
+max-height: 0;
+transition: all 0.5s;
+ overflow: hidden;
+}
+.accordion.active .icon{
+  transform: rotate(-180deg);
+  transition: all 1s;
+}
+
+.accordion.active .Answere{
+  max-height: 300px;
+}
+
+/* $$$$$$$$$$$$$ Locate us %%%%%%%%%%%  */
+.LocatePage{
+  
+  width: 120%;
+  border: 1px solid red;
+  margin-left: -8vw;
+  height: 105vh;
+  margin-top: 4vh;
+}
+.Lhead{
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(33,33, 33);
+  justify-content: center;
+  align-items: center;
+}
+.lCollection{
+  
+  
+  position: relative;
+ 
+  width: 101%;
+  
+ 
+  height: 95vh;
+}
+.LParent{
+ overflow: hidden;
+  width: 33.2%;
+  height: 50vh;
+  display: flex;
+  float: left;
+}
+.LChild{
+  width: 100%;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LChild1{
+  background-image: url('./images/dealers-landing.avif');
+}
+.LChild2{
+  background-image: url('./images/service-centre.jpg');
+}
+.LChild3{
+  background-image: url('./images/genuine-parts.avif');
+}
+.LChild4{
+  background-image: url('./images/reown.jpg');
+}
+.LChild5{
+  background-image: url('./images/GGC-tile.jpg');
+}
+.LChild6{
+  background-image: url('./images/leh-service.avif');
+}
+.Lname{
+  
+  background-color: rgb(33,33, 33);
+  color: white;
+  height: 8vh;
+  position: relative;
+  top: 42vh;
+  cursor: pointer;
+}
+.Lname h3{ 
+ position: relative;
+ top: 2vh;
+}
+.Ldetails{
+  border: 1px solid white;
+  color: white;
+  width: 8vw;
+  height: 5vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 3vh;
+  left: 12.5vw;
+  opacity: 0;
+}
+
+.Ldetails:hover{
+  background-color: white;
+  color: red;
+  transition: all 0.5s;
+}
+.LChild2 button{
+  width: 13vw;
+  left: 10vw;
+}
+.LChild3 button{
+  width: 13vw;
+  left: 10vw;
+}
+.LParent:hover .Lname{
+ height: 13vh;
+ top: 37vh;
+ transition: all 0.1s;
+}
+.LParent:hover .Ldetails{
+opacity: 1;
+
+}
+.LParent:hover .LChild{
+  transform: scale(1.02);
+  transition: all 1.5s;
+}
+
+/* %%%%%%%%%%%%%%%%% Login Page %%%%%%%%%%%%%%%%%%  */
+
+.Loginpage{
+ 
+  width: 121%;
+  margin-left: -8vw;
+  margin-top: 4.5vh;
+  height: 90vh;
+  background-image: url('./images/apparel-home1.avif');
+  background-size:cover ;
+  background-repeat: no-repeat;
+}
+.tan1{
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0,0,0 ,0.6);
+}
+.Loginpage h1{
+ color: white;
+
+ font-weight: bolder;
+ font-size: x-large;
+ position: relative;
+ top: -78vh;
+}
+.mobNum{
+  
+  position: relative;
+  width: 20vw;
+  height: 6vh;
+  top: -70vh;
+  left: 14vw;
+  color: rgb(251, 248, 248);
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.mobNum2{
+ 
+  position: relative;
+  width: 20vw;
+  height: 6vh;
+  top: -70vh;
+  left: 16vw;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.mobNum2::placeholder{
+color: white;
+padding-left: 1vw;
+font-size: medium;
+}
+.mobNum::placeholder{
+color: white;
+padding-left: 1vw;
+font-size: medium;
+}
+.logbtn{
+  width: 20vw;
+  height: 6vh;
+  position: relative;
+  top: -62vh;
+  left: -26.5vw;
+  cursor: pointer;
+  font-size: medium;
+}
+.frgtbtn{
+  width: 10vw;
+  height: 6vh;
+  position: relative;
+  top: -62vh;
+  left: -24vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+.frgtbtn h4{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+
+}
+.singup{
+ 
+  width: 40%;
+  height: 49vh;
+  color: white;
+  
+  position: relative;
+  top: -60vh;
+  left: 30vw;
+}
+.singup h2{
+  color: rgb(245, 243, 243);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 5vh;
+}
+.singup h3{
+  color: rgb(245, 243, 243);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 13vh;
+  font-size: x-large;
+}
+.logbtns{
+  width: 12vw;
+  height: 5vh;
+  position: relative;
+  top: 9vh;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+
+}
+.logbtns:hover{
+ color: red;
+ background-color: white;
+ transition: all 0.5s;
+}
+.signfb{
+  
+    width: 15vw;
+    height: 5vh;
+    position: relative;
+    top: 17vh;
+    left: -1vw;
+    border: 2px solid white;
+    background-color: rgb(24,51,146);
+    color: white;
+    cursor: pointer;
+  
+  
+}
+.signmail{
+  
+    width: 15vw;
+    height: 5vh;
+    position: relative;
+    top: 17vh;
+    left: 1vw;
+    border: 2px solid white;
+    background-color: rgb(207,82,82);
+    color: white;
+    cursor: pointer;
+  
+  
+}
+
+/* %%%%%%%%%%%%%%%%%%%%% Rides %%%%%%%%%%%  */
+
+.rideNav{
+
+  width: 120.5%;
+  height: 8vh;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-left: -8vw;
+}
+
+.rideFPage{
+  width: 120.5%;
+  
+  height: 100vh;
+  margin-left: -8vw;
+  background-color: black;
+}
+.upperdiv{
+ 
+  width: 85%;
+  height: 50vh;
+  position: relative;
+  top: 8vh;
+  left: 8vw;
+  border-radius: 20px 20px 20px 20px;
+}
+.ridePhotho{
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px 20px 20px 20px;
+
+}
+#Rleftbtn{
+  display: flex;
+  position: relative;
+  top: -26vh;
+  left: 1vw;
+  background-color: black;
+  width: 2vw;
+  height: 4vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  color: rgb(248, 246, 246);
+}
+#Rrightbtn{
+  color: rgb(249, 247, 247);
+  display: flex;
+  position: relative;
+  top: -29.5vh;
+ left: 82vw;
+ background-color: black;
+  width: 2vw;
+  height: 4vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+ border: 1px solid transparent;
+}
+#Rrightbtn:hover{
+  color: rgb(236, 39, 13);
+  background-color: white;
+}
+
+#Rleftbtn:hover{
+  color: rgb(236, 39, 13);
+  background-color: white;
+  
+}
+
+.threeDiv{
+
+width: 87%;
+height: 37vh;
+position: relative;
+top: 10vh;
+left: 8vw;
+display: flex;
+}
+.ridesTdiv{
+  
+  width: 35%;
+  height: 35vh;
+  margin-right: 2vw;
+ border-radius: 20px 20px 20px 20px;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.ridesTdiv1{
+  background-image: url('./images//Rides/adventure_banner-desktop.jpg');
+}
+.ridesTdiv2{
+  background-image: url('./images//Rides/discovery-new.jpg');
+}
+.ridesTdiv3{
+  background-image: url('./images//Rides/training-banner-desktop.avif');
+}
+
+.Rtext{
+  width: 100%;
+  color: white;
+  height: 0.1vh;
+  background-color: rgb(33,33, 33);
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  position: relative;
+  top: 35vh;
+ 
+}
+.Rtext h4{
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 2vw;
+ opacity: 0;
+ overflow: hidden;
+}
+
+.ridesTdiv:hover .Rtext{
+  height: 35vh;
+  top: 0;
+  transition: all 0.7s;
+  
+}
+.ridesTdiv:hover .Rtext h4{
+  opacity: 1;
+overflow: hidden;
+transition: all 0.4s;
+}
+.RsecondPage{
+  width: 120.5%;
+ 
+  height: 250vh;
+  margin-left: -8vw;
+  background-color: rgb(33,33, 33);
+}
+.RsecondPage h1{
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5vh;
+  font-size: xx-large;
+}
+.secondpagegrid{
+ 
+  position: relative;
+  top: 8vh;
+  display: grid;
+  height: 90vh;
+  width: 80%;
+  left: 11vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:20px
+  
+
+  
+}
+.secGimg{
+  
+  border-radius: 20px 20px 20px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.secGgrid1{
+ grid-row: 1/3;
+ grid-column: 1/3;
+ background-image: url('./images/Rides/adventure-adventure-new.jpg');
+ 
+}
+.secGgrid2{
+  background-image: url('./images/Rides/everest-base-camp-thumbnail.jpg');
+}
+.secGgrid3{
+  background-image: url('./images/Rides/himalayan-adventure-odessey.avif');
+ 
+}
+.secGgrid4{
+  background-image: url('./images/Rides/changthang-2024.webp');
+}
+.secGgrid5{
+  background-image: url('./images/Rides/moto-himalayan-zanskar-cover.avif');
+}
+.secGgrid6{
+  background-image: url('./images/Rides/himalayan-adventure-changtang.jpg');
+}
+.secGgrid7{
+  background-image: url('./images/Rides/himlayans-adventure-tibet-new.avif');
+}
+.secGgrid8{
+  background-image: url('./images/Rides/himalayans-adv-manang.jpg');
+}
+.secGgrid9{
+  background-image: url('./images/Rides/himalayan-mustang-cover.jpg');
+}
+.secGgrid1 h1{
+  font-size: 3vw;
+  position: relative;
+  left: -10vw;
+  top: 2vh;
+}
+.bio{
+  color: rgb(31, 215, 235);
+  position: relative;
+  top: 16VH;
+  text-align: left;
+  padding-left: 2VW;
+ 
+
+
+}
+.bio h4{
+  margin-bottom: 3px;
+}
+.bio h5{
+  margin-bottom: 1px;
+  color: white;
+  opacity: 1;
+  margin-top: 5px;
+}
+.bio p{
+  font-size: small;
+}
+
+.myRideSgrid{
+  position: relative;
+  
+  top: 11vh;
+  display: grid;
+  height: 130vh;
+  width: 80%;
+  left: 11vw;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 2fr ;
+  grid-gap: 20px;
+  
+  
+}
+.MrIMG{
+  
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.MrIMG1{
+ background-image: url('./images/Rides/uncover-north-east-main-2.jpg');
+}
+.MrIMG2{
+ background-image: url('./images/Rides/oneride-2024-thumb.avif');
+}
+.MrIMG3{
+  background-image: url('./images/Rides/discovery-listing-new.jpg');
+  
+}
+.MrIMG4{
+  background-image: url('./images/royal-enfield-gallery.avif');
+  grid-column: 1/3;
+  height: 80vh;
+}
+.MrIMG5{
+  background-image: url('./images/Rides/royal-enfield-trail-school-thumbnail.jpg');
+}
+.MrIMG .bio{
+  top: 38vh;
+  color: white;
+}
+.MrIMG h1{
+  position: relative;
+  left: -10vw;
+  font-size: 3vw;
+  top: 1vh;
+}
+.MrIMG h3{
+  position: relative;
+ top: 75vh;
+ left: -10vw;
+ 
+}
+
+.RthirdPage{
+  width: 120.5%;
+  
+  height: 150vh;
+  margin-left: -8vw;
+  background-color: black;
+}
+.thirdgridR{
+  position: relative;
+  
+  top: 4vh;
+  display: grid;
+  height: 125.8vh;
+  width: 90%;
+  left: 5vw;
+  grid-template-rows: 40vh 40vh 40vh;
+  grid-template-columns: 28vw 28vw 2fr;
+  grid-gap: 20px;
+
+
+}
+.Tgrid{
+  
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Tgrid1{
+ background-image: url("./images/Rides/gallery-7.jpg");
+}
+.Tgrid2{
+  background-image: url("./images/Rides/gallery-2.avif");
+}
+.Tgrid3{
+  grid-column: 3/4;
+  grid-row: 1/4;
+  background-image: url('./images/women_rider_training.jpg');
+}
+.Tgrid4{
+  background-image: url("./images/Rides/gallery-3.jpg");
+}
+.Tgrid5{
+  background-image: url("./images/Rides/gallery-4.avif");
+}
+.Tgrid6{
+  background-image: url("./images/Rides/gallery-6.jpg");
+}
+.Tgrid7{
+  background-image: url("./images/Rides/gallery-5.jpg");
+}
+.RthirdPage h1{
+  color: white;
+  position: relative;
+  left: -40vw;
+  top: 6vh;
+}
+.RthirdPage h2{
+  color: white;
+  position: relative;
+  left: 20vw;
+  top: 2vh;
+  font-size: xx-large;
+}
+/* $$$$$$$$$$$$$$$$$$$$ Responsive Site %%%%%%%%%%%%%%  */
+@media (max-width:600px) {
+  html,body{
+  width: 310vw;
+  height: auto;
+  overflow-x: hidden;
+ margin-left: -16px;
+ background-color:rgb(229,227,227);
+  
+ }
+  
+  .hero_page{
+   overflow: hidden;
+    height: auto;
+    width: 100vw;
+   z-index: 9;
+   
+  
+  
+
+  }
+   .mynav{
+   display: grid;
+    width: 100vw;
+    overflow: hidden;
+    grid-template-columns: 5rem 3fr 1fr 2rem;
+  }
+  #logo{
+    display: grid;
+    width: 70%;
+    height: 5vh;
+    justify-content: start;
+    align-items: center;
+    grid-column: 2/3;
+    margin-top: 2vh;
+    margin-left: -5vw;
+   
+  }
+  
+  .sideIcon ul{
+  position: fixed;
+  top: 65px;
+  left: 0%;
+  background-color: #1b1b1b;
+  height: 50vh;
+  width: 52.6vw;
+  display: block;
+  text-align: center;
+  padding-left: 45vw;
+  height: 40vh;
+  visibility: visible;
+  
+  
+    
+  }
+  .sideIcon ul li{
+    display: block;
+  }
+  nav li{
+    display: none;
+  }
+  .sideIcon  {
+    position: fixed;
+    top: 65px;
+    left: 0%;
+   
+    height: 70vh;
+    width: 52.6vw;
+    display: none;
+    text-align: center;
+    padding-left: 45vw;
+   
+    
+    
+      
+    }
+    
+ 
+  #shop{
+    display: none;
+  }
+  nav li a{
+   
+    display: flex;
+    font-size: 2.5vh;
+    align-items: center;
+    
+    justify-content: center;
+    
+    width: 25vw;
+    margin-left: -8vw;
+    
+   
+  }
+  .clientside{
+    display: grid;
+    width: 10%;
+    height:8vh ;
+    margin-left: -10vw;
+    margin-top: 2.4vh;
+    grid-column: 4/5;
+    display: none;
+   
+  }
+  .menu1{
+   
+   color: white;
+   margin-left: -5vw;
+    grid-column: 2/3;
+    display: flex;
+    padding-top: 2vw;
+   
+    
+   
+  }
+  .closeB{
+    margin-left: -10vw;
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    visibility: visible;
+    background-color:transparent;
+    margin-top: -4.7vh;
+    border: 1px solid black;
+  }
+  .sideicon{
+    margin-left: -8vw;
+    margin-top: -4.5vh;
+    width: 5vw;
+    height: 5vh;
+    color: white;
+    visibility: visible;
+    display: flex;
+    background-color:transparent;
+    
+    border: 1px solid black;
+  }
+  .mob_content{
+    grid-column: 3/4;
+    position: relative;
+    z-index: 99;
+    display: grid;
+    
+  }
+  nav ul li a:hover .dropdown{
+    display: none;
+
+  }
+.mynav2{
+  display: none;
+}
+.mynav3{
+  display: none;
+}
+.profile{
+  display: flex;
+  height: 4vh;
+  color: white;
+  margin-top:1.3vh ;
+  margin-left: 1vw;
+  border: 1px solid black;
+  background-color: transparent;
+}
+#firstV{
+  display: none;
+  overflow: hidden;
+}
+ #secondV{
+  display: flex;
+  margin-top: 3vh;
+  width: 95%;
+  height: 85%;
+  margin-left: 2.5vw;
+ 
+ }
+ .explore_btn h1{
+  color: white;
+ display: flex;
+ padding-top: 2vh;
+ 
+ font-size: 5vw;
+
+}
+.explore_btn button{
+  width: 8vw;
+  height: 3vh;
+ width: 30vw;
+  margin-top: -4vh;
+  border-radius: 10px;
+}
+.explore_btn{
+
+  display: flex;
+ flex-direction: column;
+  margin-top: 44vh;
+  z-index: 9999;
+  width: 62.5vw;
+  height: 10.2vh;
+  margin-left: -5vw;
+  padding-left: 35vw;
+  background-color: rgb(33,33,33);
+  
+
+  
+
+}
+.slides{
+  
+  width: 100%;
+ height: 90vh;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ 
+display: none;
+
+ 
+
+}
+#know{
+  width: 25vw;
+  height: 5vh;
+  display: flex;
+  font-size: larger;
+  padding-left: 8px;
+  padding-top: 5px;
+  box-shadow: 5px 5px 5px black;
+  position: absolute;
+  top: 65vh;
+  left: 37vw;
+  cursor: pointer;
+}
+.mslides{
+  
+  width: 100%;
+ height: 90vh;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+
+visibility: visible;
+
+
+ 
+
+}
+.photho_dump{
+  visibility: hidden;
+}
+.mphoto{
+  
+  width: 98%;
+  height: 40vh;
+  visibility: visible;
+  z-index: 9999;
+  display: flex;
+  background-image: url("./images/RE.avif");
+ background-size: 100% 100%;
+ animation: changeImg 18s linear infinite;
+}
+@keyframes changeImg {
+  0%{
+    background-image: url("./images/RE3.avif");
+  }
+  25%{
+    background-image: url("./images/RE1.avif"); 
+  }
+  50%{
+    background-image: url("./images/RE.avif");
+  }
+  75%{
+    background-image: url("./images/RE3.avif");
+  }
+  100%{
+    background-image: url("./images/RE2.avif");
+  }
+  
+}
+.claasicimg{
+  background-size: cover;
+   background-image: url("./images/stealbreak.avif");
+   
+   width: 98%;
+   background-size: 100% 80%;
+   background-repeat: no-repeat;
+   height: 100vh;
+   margin-top: -38vh;
+  
+ 
+ }
+ .claasicimg button{
+  width: 15vw;
+  height: 4vh;
+  font-size: 3vw;
+ position: absolute;
+ top: 108vh;
+ left: 41vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(1, 1, 1);
+} 
+.third_page{
+  width: 100.8vw;
+  height: 125vh;
+  position: relative;
+  margin-top: -5px;
+  
+}
+.mynav2{
+  width: 100.8vw;
+height: 8vh;
+background-color: rgb(33,33,33);
+margin-top: -35vh;
+color: white;
+display: flex;
+
+
+
+}
+.logo1{
+  width: 15%;
+  height: 5vh;
+  margin-left: 2vw;
+  margin-top: 13px;
+ display: none;
+}
+.bikeDetailes ul li a{
+  text-decoration: none;
+  font-size: medium;
+  display: flex;
+  padding: 1vw;
+  list-style: none;
+  
+
+}
+#menu{
+  display: none;
+}
+
+#Mmenu {
+  display: flex;
+  margin-left: -5vw;
+  justify-content: space-between;
+  text-align: center;
+  visibility: visible;
+}
+#Mmenu li{
+margin-left: -1vw;
+padding-left: 7.5vw;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#Mmenu h3{
+  font-size: 4vh;
+  margin-top: -1vh;
+  padding-right: 1.4vw;
+  margin-left: -1vw;
+}
+.fourth_page{
+ overflow: hidden;
+ 
+  width: 99.2vw;
+  height: 210vh;
+  position: relative;
+  
+ z-index: 99999;
+}
+.mynav3 {
+  width: 99.2vw;
+  height: 8vh;
+  background-color: rgb(33,33,33);
+ 
+  color: white;
+  display: flex;
+  
+
+  }
+  #menu3 {
+    display: flex;
+    margin-left: -8vw;
+    visibility: visible;
+  }
+  #menu3 li{
+  
+  
+  padding-left: 4vw;
+  padding-left: 5.2vw;
+  margin-top: -5.5vh;
+  display: flex;
+  padding-right: 3vw;
+  align-items: center;
+  justify-content: space-between;
+  }
+  #menu3 h3{
+   
+    margin-top: -1vh;
+    padding-right: 1vw;
+    
+    margin-top: -4vh;
+    
+  }
+  .bikedetailes ul li a{
+    cursor: pointer;
+    color: white;
+    width: 20vw;
+    padding-left: 2vw;
+    margin-left: -8vw;
+    font-size: medium;
+    text-decoration: none;
+  }
+  .myimg4{
+    background-image: url("./images/women_rider_training.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    
+  }
+  .myimg4 img{
+    width: 100%;
+    height: 100vh;
+  }
+  .fourth_page .poster{
+    width: 30vw;
+    height: 6vh;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 80vh;
+    left: 33vw;
+    display: flex;
+    background-color: transparent;
+    color: white;
+   
+    font-size: large;
+    font-weight: bold;
+    background-color: blue;
+    padding-right: .8vw;
+  }
+  .poster:hover{
+    background-color: blueviolet;
+    
+  }
+  .service{
+    width: 70%;
+    height: 35vh;
+    background-color: black;
+    display: flex;
+    padding-left: 25vw;
+    padding-top: 2vh;
+    margin-top: -20vh;
+   
+  }
+  .container{
+    background-color: rgb(33,33,33);
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 1vw;
+   display: flex;
+   flex-wrap: wrap;
+    
+   
+  
+  }
+  .container h3{
+    padding-left: 11vw;
+    padding-top: 2vh;
+  }
+  .container:hover{
+    color: red;
+  }
+  .tap{
+    background-image: url("./images/tap-click-svgrepo-com.svg");
+    background-size: 35%;
+    background-position: top center;
+    margin-left: -17vw;
+    color: white;
+    opacity: 0.8;
+    background-position: top center;
+    width: 48vw;
+    height: 15vh;
+    
+    
+  }
+  .map{
+    background-image: url("./images/map-pointer-svgrepo-com.svg");
+    background-size: 35%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-left: 3vw;
+    color: white;
+    opacity: 0.8;
+    width: 48vw;
+    height: 15vh;
+   
+    
+  }
+  .gear{
+    background-image: url("./images/tools-svgrepo-com.svg");
+    background-size: 35%;
+    background-position: top center;
+    margin-left: -88vw;
+    color: white;
+    opacity: 0.8;
+    flex-direction: column;
+    width: 48vw;
+    height: 15vh;
+    margin-top: 18vh;
+    
+    
+  }
+  .Ridebike{
+    background-image: url("./images/motorcycle.png");
+    background-size: 40%;
+    background-position: top center;
+    color: white;
+    margin-left: 3vw;
+    color: white;
+    
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    flex-direction: column;
+    width: 48vw;
+    height: 15vh;
+    margin-top: 18vh;
+   
+    
+  }
+  .Ridebike h3{
+    margin-top: 11vh;
+    margin-left: -9vw;
+  }
+ /* ########### Footer ########  */
+ .myFooter{
+  display: flex;
+  
+  z-index: 99999;
+  width: 100%;
+  height: 90vh;
+ 
+ 
+}
+.socialhandels{
+  width: 100%;
+  height: 8vh;
+
+  
+  
+}
+.Fcontent ul {
+  display: flex;
+  float: left;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 6vh;
+  padding-left: 8vw;
+  margin-left: 18vw;
+  text-decoration: none;
+}
+
+.Fcontent h3{
+  display: flex;
+  padding-bottom: 1vh;
+  margin-top:-1vh;
+  margin-left: 28vw;
+  justify-content: center;
+  align-items: center;
+}
+.list ul{
+  display: flex;
+  flex-direction: column;
+ position: absolute;
+ top: 10vh;
+ display: none;
+
+ 
+}
+.flists{
+
+  width: 100%;
+  height: 70vh;
+  margin-top: 3vh;
+  display: none;
+}
+.Efooter{
+
+  width: 100%;
+  border: 1px solid rgb(33, 33, 33);
+  height: 7.5vh;
+  display: flex;
+ margin-top: -13vh;
+ 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#first{
+  width: 100%;
+ font-size: small;
+ padding-top: 1vh;
+
+
+}
+#second{
+  font-size: small;
+  width: 100%;
+ 
+}
+.flists{
+  display: none;
+}
+.fborder{
+  display: none;
+}
+.mList{
+  display: flex;
+  margin-left: -90vw;
+  margin-top: 17vh;
+ visibility: visible;
+  width: 70%;
+  height: 40%;
+  flex-direction: row;
+  
+  
+ 
+}
+.mList .mbtn{
+ visibility: visible;
+ top: 1vh;
+ position: relative;
+ 
+  
+}
+.mList ul li{
+  cursor: pointer;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+ padding-bottom: 1vh;
+ font-weight: bolder;
+ font-size: large;
+}
+.mList ul li:hover{
+  color: red;
+}
+
+  }
+  /* $$$$$$$$$$$ NAvbar $$$$$$$$$  */
+
